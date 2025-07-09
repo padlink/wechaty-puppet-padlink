@@ -1,6 +1,6 @@
 {
   "name": "wechaty-puppet-padlink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Puppet Padlink for Wechaty",
   "type": "commonjs",
   "exports": {
@@ -36,7 +36,6 @@
     "@types/qrcode-terminal": "^0.12.2",
     "@types/redis": "^4.0.11",
     "@types/ws": "^8.5.13",
-    "node-cleanup": "^2.1.2",
     "prettier": "^3.2.5",
     "wechaty": "^1.20.2"
   },
@@ -55,7 +54,8 @@
     "node-machine-id": "^1.1.12",
     "qrcode-terminal": "^0.12.0",
     "ws": "^8.18.0",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "node-cleanup": "^2.1.2"
   },
   "optionalDependencies": {
     "redis": "^4.0.0"
