@@ -1,0 +1,1 @@
+{"version":3,"file":"PackageManager.d.ts","sourceRoot":"","sources":["../../../src/lib/PackageManager.ts"],"names":[],"mappings":"AAMA,qBAAa,cAAc;IACzB,OAAO,CAAC,QAAQ,CAAS;IACzB,OAAO,CAAC,aAAa,CAAkB;;IAMjC,UAAU;IAgBhB,OAAO,CAAC,uBAAuB;YAwBjB,iBAAiB;IAa/B,OAAO,IAAI,OAAO;CAGnB"}

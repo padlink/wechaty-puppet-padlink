@@ -1,0 +1,1 @@
+{"version":3,"file":"room.d.ts","sourceRoot":"","sources":["../../../../src/mock/schema-mapper/room.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,MAAM,gBAAgB,CAAC;AAI9C,wBAAgB,oBAAoB,CAAC,OAAO,EAAE,GAAG,GAAG,MAAM,CAAC,QAAQ,CAAC,IAAI,CAWvE;AAED,wBAAgB,0BAA0B,CACxC,cAAc,EAAE,GAAG,GAClB,MAAM,CAAC,QAAQ,CAAC,UAAU,CAQ5B;AAED,wBAAgB,uBAAuB,CAAC,cAAc,EAAE,GAAG,GAAG,GAAG,CAMhE"}

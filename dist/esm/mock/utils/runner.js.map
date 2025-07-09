@@ -1,0 +1,1 @@
+{"version":3,"file":"runner.js","sourceRoot":"","sources":["../../../../src/mock/utils/runner.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,KAAK,UAAU,cAAc,CAAI,OAAoB;IAC1D,KAAK,MAAM,MAAM,IAAI,OAAO,EAAE;QAC5B,MAAM,GAAG,GAAG,MAAM,MAAM,EAAE,CAAC;QAC3B,IAAI,GAAG,EAAE;YACP,OAAO,GAAG,CAAC;SACZ;KACF;IAED,OAAO,IAAI,CAAC;AACd,CAAC"}

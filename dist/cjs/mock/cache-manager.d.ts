@@ -1,0 +1,55 @@
+import type * as PUPPET from "wechaty-puppet";
+export type RoomMemberMap = {
+    [contactId: string]: any;
+};
+export declare class CacheManager {
+    private readonly _userName;
+    private _messageCache?;
+    private _messageRevokeCache?;
+    private _contactCache?;
+    private _contactSearchCache?;
+    private _contactStrangerAliasCache?;
+    private _roomCache?;
+    private _roomMemberCache?;
+    private _roomInvitationCache?;
+    private _friendshipCache?;
+    private _labelList?;
+    constructor(userName: string);
+    init(): Promise<void>;
+    close(): Promise<void>;
+    getMessage(messageId: string): Promise<any | undefined>;
+    setMessage(messageId: string, payload: any): Promise<void>;
+    hasMessage(messageId: string): Promise<boolean>;
+    getMessageRevokeInfo(messageId: string): Promise<any | undefined>;
+    setMessageRevokeInfo(messageId: string, messageSendResult: any): Promise<void>;
+    getContact(contactId: string): Promise<any | undefined>;
+    setContact(contactId: string, payload: any): Promise<void>;
+    deleteContact(contactId: string): Promise<void>;
+    getContactIds(): Promise<string[]>;
+    getAllContacts(): Promise<any[]>;
+    hasContact(contactId: string): Promise<boolean>;
+    getContactCount(): Promise<number>;
+    getContactSearch(id: string): Promise<any | undefined>;
+    setContactSearch(id: string, payload: any): Promise<void>;
+    hasContactSearch(id: string): Promise<boolean>;
+    getContactStrangerAlias(encryptedUserName: string): Promise<string | undefined>;
+    setContactStrangerAlias(encryptedUserName: string, alias: string): Promise<void>;
+    deleteContactStrangerAlias(encryptedUserName: string): Promise<void>;
+    getRoom(roomId: string): Promise<any | undefined>;
+    setRoom(roomId: string, payload: any): Promise<void>;
+    deleteRoom(roomId: string): Promise<void>;
+    getRoomIds(): Promise<string[]>;
+    getRoomCount(): Promise<number>;
+    hasRoom(roomId: string): Promise<boolean>;
+    getRoomMember(roomId: string): Promise<RoomMemberMap | undefined>;
+    setRoomMember(roomId: string, payload: RoomMemberMap): Promise<void>;
+    deleteRoomMember(roomId: string): Promise<void>;
+    getRoomInvitation(messageId: string): Promise<PUPPET.payloads.RoomInvitation | undefined>;
+    setRoomInvitation(messageId: string, payload: PUPPET.payloads.RoomInvitation): Promise<void>;
+    deleteRoomInvitation(messageId: string): Promise<void>;
+    getFriendshipRawPayload(id: string): Promise<PUPPET.payloads.Friendship | undefined>;
+    setFriendshipRawPayload(id: string, payload: PUPPET.payloads.Friendship): Promise<void>;
+    getLabelList(): any[] | undefined;
+    setLabelList(labelList: any[]): void;
+}
+//# sourceMappingURL=cache-manager.d.ts.map
